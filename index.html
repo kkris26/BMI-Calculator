@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
+  </head>
+  <body>
+    <section class="bmi-calculator">
+      <div class="bmi-wrapper">
+        <h1>BMI Calculator</h1>
+        <!-- input -->
+        <div class="input">
+          <div class="berat">
+            <input
+              type="text"
+              id="input-berat"
+              name="weight"
+              required="requaired"
+            />
+            <span>Berat Badan (Kg)</span>
+          </div>
+          <div class="tinggi">
+            <input
+              type="text"
+              id="input-tinggi"
+              name="height"
+              required="requaired"
+            />
+            <span>Tinggi Badan (Cm)</span>
+          </div>
+          <button onclick="BMICalculator()">Hitung</button><br />
+        </div>
+        <!-- input -->
+        <!-- hasil -->
+        <div class="hasil">
+          <div class="bmi">
+            <p>BMI :</p>
+            <p id="bmi"></p>
+          </div>
+          <div class="category">
+            <p>Category :</p>
+            <p id="category"></p>
+          </div>
+        </div>
+        <!-- hasil -->
+      </div>
+    </section>
+<!-- script -->
+<script src="script.js"></script>
+<!-- script -->
+  </body>
+</html>
